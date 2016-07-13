@@ -1,4 +1,4 @@
-// Tema 5 - Jogo Ataque Viking
+// Tema 5 - Jogo Ataque Viking <3 
 #include <iostream>
 #include <string>
 using namespace std;
@@ -9,12 +9,17 @@ void mostrar_menu();
 void distribuir_atributos(char papel);
 void tela_treinamento();
 void tela_atributos();
+
+
+
+int pegar_vida();
+string pegar_estado(int vida);
+
 // variáveis globais 
 int ataque, defesa, vida;
 string estado = "INICIANTE";
 int pontos_extras = 0;
-//int pegar_vida();
-//string pegar_estado(int vida);
+
 
 /*
 *	Jogo de RPG onde construímos um personagem Viking.
@@ -243,9 +248,9 @@ void tela_atributos ()
 					cout << "Aumentou DEFESA +1 e VIDA" << endl;
 					defesa++;
 
-					//vida = pegar_vida();
-					//estado = pegar_estado(vida);
-
+					vida = pegar_vida();//calcular a nova vida e retornar o valor para a variavel "vida".
+					estado = pegar_estado(vida);
+      
 					pontos_extras--;
 				}
 				else cout << "Pontos de atributos insuficientes. Pratique mais." << endl;
@@ -255,32 +260,21 @@ void tela_atributos ()
 			system("pause");
 			system("cls");
 }
-/*
 
-int pegar_vida()
+int pegar_vida()//função para calcular a vida nova e retornar na variavel "vida".
 {
 	int vida_nova = vida + (defesa * 2);
 	return vida_nova;
 }
-*/
-/*
+
+
 string pegar_estado(int vida)
 {
-	switch (vida)
-	{
-		case 10 ... 15: 
-			return "WEAK";
-		case 16 ... 25:
-			return "NORMAL";
-		case 26 ... 35:
-			return "STRONG";
-		case 35 ... 100:
-			return "SUPER STRONG";
-	}
+
 	if( vida >= 10 && vida <= 15) return "WEAK";
 	else if (vida >= 16 && vida <= 25) return "NORMAL";
 	else if (vida >= 26 && vida <= 35) return "STRONG";
 	else if (vida >= 36) return "SUPER STRONG";
 	else return "INVALID";
 }
-*/
+
