@@ -1,5 +1,8 @@
            CODIGOS DE POO EXTRAS 
 
-  CODIGOS EXTRAS OU RESOLVIDOS EM SALA COM O PROFESSOR.
-               
-                :) 
+  codigos : Extras;
+            Resolvidos pelo professor;
+            Listas de exercicios;
+            
+                          (:
+            
