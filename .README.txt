@@ -1,8 +1,0 @@
-           CODIGOS DE POO EXTRAS 
-
-  codigos : Extras;
-            Resolvidos pelo professor;
-            Listas de exercicios;
-            
-                          (:
-            
